@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import {Component} from 'react'
 import TailSpin from 'react-loader-spinner'
 import Header from '../Header'
 import Course from '../Course'
@@ -73,7 +73,9 @@ export default class Home extends Component {
               <h1>Oops! Something Went Wrong</h1>
               <p>We cannot seem to find the page you are looking for</p>
               <div>
-                <button onClick={this.fetchApiDetails}>Retry</button>
+                <button type="button" onClick={this.fetchApiDetails}>
+                  Retry
+                </button>
               </div>
             </div>
           )}
